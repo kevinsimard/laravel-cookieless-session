@@ -1,0 +1,20 @@
+{
+    "name": "kevinsimard/laravel-cookieless-session",
+    "description": "",
+    "keywords": ["laravel", "cookieless", "session", "token"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Simard",
+            "email": "kev.simard@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Kevinsimard\\CookielessSession": "src/"
+        }
+    },
+    "require": {
+        "illuminate/http": "5.x"
+    }
+}
