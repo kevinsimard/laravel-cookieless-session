@@ -1,6 +1,6 @@
 {
     "name": "kevinsimard/laravel-cookieless-session",
-    "description": "",
+    "description": "Laravel middleware to start a cookieless session",
     "keywords": ["laravel", "cookieless", "session", "token"],
     "license": "MIT",
     "authors": [
