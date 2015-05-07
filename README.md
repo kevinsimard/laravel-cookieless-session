@@ -1,5 +1,4 @@
 # Laravel Cookieless Session Middleware
-[![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
 
 All you need to do is to add the following key ```X-Session-Token``` to your requests' headers to load sessions.
 
@@ -35,8 +34,4 @@ class Kernel extends Http\Kernel
     ├── .gitattributes
     ├── .gitignore
     ├── composer.json
-    ├── LICENSE.txt
     └── README.md
-
-## License
-This middleware is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
