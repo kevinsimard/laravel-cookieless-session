@@ -1,4 +1,5 @@
 # Laravel Cookieless Session Middleware
+[![Code Climate](https://codeclimate.com/github/kevinsimard/laravel-cookieless-session/badges/gpa.svg)](https://codeclimate.com/github/kevinsimard/laravel-cookieless-session)
 
 All you need to do is to add the following key ```X-Session-Token``` to your requests' headers to load sessions.
 
