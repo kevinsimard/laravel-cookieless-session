@@ -54,9 +54,11 @@ class StartSession extends OriginalStartSession
      */
     public function getSession(Request $request)
     {
-        $session = $this->manager->driver();
+        $sessionToken = $request->headers->get('X-Session-Token',
+            $request->input('_session-token'));
 
-        $session->setId($request->headers->get('X-Session-Token'));
+        $session = $this->manager->driver();
+        $session->setId($sessionToken);
 
         return $session;
     }
