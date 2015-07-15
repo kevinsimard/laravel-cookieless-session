@@ -20,7 +20,7 @@ class Kernel extends Http\Kernel
      */
     protected $middleware = [
         //'Illuminate\Session\Middleware\StartSession',
-        'Kevinsimard\CookielessSession\Middleware\StartSession',
+        '\Kevinsimard\CookielessSession\Middleware\StartSession',
         ...
     ];
 ...
