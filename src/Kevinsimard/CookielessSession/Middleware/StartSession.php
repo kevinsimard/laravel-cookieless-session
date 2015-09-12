@@ -14,7 +14,7 @@ class StartSession extends OriginalStartSession
      * Handle an incoming request.
      *
      * @param \Illuminate\Http\Request $request
-     * @param \Closure $next
+     * @param \Closure                 $next
      *
      * @return mixed
      */
@@ -67,9 +67,7 @@ class StartSession extends OriginalStartSession
      * Add the session identifier to the application response.
      *
      * @param \Symfony\Component\HttpFoundation\Response $response
-     * @param \Illuminate\Session\SessionInterface $session
-     *
-     * @return void
+     * @param \Illuminate\Session\SessionInterface       $session
      */
     protected function addIdentifierToResponse(Response $response, SessionInterface $session)
     {
