@@ -38,14 +38,14 @@ Replace the original session service provider in ```config/app.php```
 ```
 
 ## Code Structure
-    ┌── src/
-    │   └── Kevinsimard/
-    │       └── CookielessSession/
-    │           └── Middleware/
-    │           │   └── StartSession.php
-    │           └── Providers/
-    │               └── SessionServiceProvider.php
+    ├── src
+    │   └── Kevinsimard
+    │       └── CookielessSession
+    │           ├── Middleware
+    │           │   └── StartSession.php
+    │           └── Providers
+    │               └── SessionServiceProvider.php
     ├── .gitattributes
     ├── .gitignore
-    ├── composer.json
-    └── README.md
+    ├── README.md
+    └── composer.json
