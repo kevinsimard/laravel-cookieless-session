@@ -1,10 +1,10 @@
 # Laravel Cookieless Session Middleware
-[![Code Climate](https://codeclimate.com/github/kevinsimard/laravel-cookieless-session/badges/gpa.svg)](https://codeclimate.com/github/kevinsimard/laravel-cookieless-session)
 
-All you need to do is to add the following key ```X-Session-Token``` to your requests' headers to load sessions.
+All you need to do is to add the following key `X-Session-Token` to your requests' headers to load sessions.
 
 ## Installation
-Replace the original start session middleware in ```app/Http/Kernel.php```
+
+Replace the original start session middleware in `app/Http/Kernel.php`.
 
 ```php
 <?php namespace App\Http;
@@ -26,7 +26,7 @@ class Kernel extends Http\Kernel
 ...
 ```
 
-Replace the original session service provider in ```config/app.php```
+Replace the original session service provider in `config/app.php`.
 
 ```php
 'providers' => [
@@ -38,6 +38,7 @@ Replace the original session service provider in ```config/app.php```
 ```
 
 ## Code Structure
+
     ├── src
     │   └── Kevinsimard
     │       └── CookielessSession
@@ -45,7 +46,13 @@ Replace the original session service provider in ```config/app.php```
     │           │   └── StartSession.php
     │           └── Providers
     │               └── SessionServiceProvider.php
+    ├── .editorconfig
     ├── .gitattributes
     ├── .gitignore
+    ├── LICENSE.txt
     ├── README.md
     └── composer.json
+
+## License
+
+This package is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).

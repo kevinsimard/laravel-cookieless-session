@@ -9,12 +9,12 @@
             "email": "kev.simard@gmail.com"
         }
     ],
+    "require": {
+        "illuminate/http": "5.x"
+    },
     "autoload": {
         "psr-0": {
             "Kevinsimard\\CookielessSession": "src/"
         }
-    },
-    "require": {
-        "illuminate/http": "5.x"
     }
 }
