@@ -14,8 +14,6 @@ use Illuminate\Foundation\Http;
 class Kernel extends Http\Kernel
 {
     /**
-     * The application's global HTTP middleware stack.
-     *
      * @var array
      */
     protected $middleware = [

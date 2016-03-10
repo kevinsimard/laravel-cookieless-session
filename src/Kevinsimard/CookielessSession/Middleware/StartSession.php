@@ -11,11 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 class StartSession extends OriginalStartSession
 {
     /**
-     * Handle an incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure  $next
-     * @return mixed
+     * {@inheritdoc}
      */
     public function handle($request, Closure $next)
     {
@@ -45,10 +41,7 @@ class StartSession extends OriginalStartSession
     }
 
     /**
-     * Get the session implementation from the manager.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Session\SessionInterface
+     * {@inheritdoc}
      */
     public function getSession(Request $request)
     {
@@ -62,11 +55,7 @@ class StartSession extends OriginalStartSession
     }
 
     /**
-     * Add the session identifier to the application response.
-     *
-     * @param  \Symfony\Component\HttpFoundation\Response  $response
-     * @param  \Illuminate\Session\SessionInterface  $session
-     * @return void
+     * {@inheritdoc}
      */
     protected function addIdentifierToResponse(Response $response, SessionInterface $session)
     {
