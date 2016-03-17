@@ -13,8 +13,8 @@
         "illuminate/http": "5.x"
     },
     "autoload": {
-        "psr-0": {
-            "Kevinsimard\\CookielessSession": "src/"
+        "psr-4": {
+            "Kevinsimard\\CookielessSession\\": "src/"
         }
     }
 }
