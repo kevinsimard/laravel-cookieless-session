@@ -10,7 +10,7 @@
         }
     ],
     "require": {
-        "illuminate/http": "5.x"
+        "illuminate/http": "5.2.*|5.3.*"
     },
     "autoload": {
         "psr-4": {
