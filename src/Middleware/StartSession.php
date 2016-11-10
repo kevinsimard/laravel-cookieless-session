@@ -45,8 +45,8 @@ class StartSession extends OriginalStartSession
      */
     public function getSession(Request $request)
     {
-        $sessionToken = $request->headers->get('X-Session-Token',
-            $request->input('_session-token'));
+        $sessionToken = $request->headers->get("X-Session-Token",
+            $request->input("_session-token"));
 
         $session = $this->manager->driver();
         $session->setId($sessionToken);
@@ -60,7 +60,7 @@ class StartSession extends OriginalStartSession
     protected function addIdentifierToResponse(Response $response, SessionInterface $session)
     {
         if ($this->sessionIsPersistent($config = $this->manager->getSessionConfig())) {
-            $response->headers->set('X-Session-Token', $session->getId());
+            $response->headers->set("X-Session-Token", $session->getId());
         }
     }
 }

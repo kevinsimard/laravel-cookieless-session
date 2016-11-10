@@ -15,6 +15,6 @@ class SessionServiceProvider extends OriginalServiceProvider
 
         $this->registerSessionDriver();
 
-        $this->app->singleton('Kevinsimard\CookielessSession\Middleware\StartSession');
+        $this->app->singleton("Kevinsimard\CookielessSession\Middleware\StartSession");
     }
 }

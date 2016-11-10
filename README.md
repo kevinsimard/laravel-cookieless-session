@@ -1,6 +1,6 @@
 # Laravel Cookieless Session Middleware
 
-All you need to do is to add the following key `X-Session-Token` to your requests' headers to load sessions.
+All you need to do is to add the following key `X-Session-Token` to your requests" headers to load sessions.
 
 ## Installation
 
@@ -17,8 +17,8 @@ class Kernel extends Http\Kernel
      * @var array
      */
     protected $middleware = [
-        //'Illuminate\Session\Middleware\StartSession',
-        'Kevinsimard\CookielessSession\Middleware\StartSession',
+        //"Illuminate\Session\Middleware\StartSession",
+        "Kevinsimard\CookielessSession\Middleware\StartSession",
         ...
     ];
 ...
@@ -27,10 +27,10 @@ class Kernel extends Http\Kernel
 Replace the original session service provider in `config/app.php`.
 
 ```php
-'providers' => [
+"providers" => [
     ...
-    //'Illuminate\Session\SessionServiceProvider',
-    'Kevinsimard\CookielessSession\Providers\SessionServiceProvider',
+    //"Illuminate\Session\SessionServiceProvider",
+    "Kevinsimard\CookielessSession\Providers\SessionServiceProvider",
     ...
 ],
 ```
