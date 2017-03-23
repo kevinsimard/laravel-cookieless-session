@@ -47,7 +47,7 @@ Replace the original session service provider in `config/app.php`.
     ├── .editorconfig
     ├── .gitattributes
     ├── .gitignore
-    ├── LICENSE.txt
+    ├── LICENSE.md
     ├── README.md
     └── composer.json
 
